@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Your favourite music is here</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand"><img src="logo.png" alt="spotify" /></li>
+        <li class="brand-name">Spotify</li>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="song-list">
+        <h1 class="song-title">Best of NCS - No Copyright Songs</h1>
+        <div class="playlists">
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">Let Me Love You</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">03:25</span>
+              <i id="1" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">CKay - Love Nwantiti (Feat. Dj Yo!)</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">03:08</span>
+              <i id="2" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">Badshah - Jugnu (Official Video)</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">03:50</span>
+              <i id="3" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">Alec Benjamin - Let Me Down Slowly</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">02:50</span>
+              <i id="4" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">Let Me Love You</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">02:31</span>
+              <i id="5" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">Let Me Love You</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">02:20</span>
+              <i id="6" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">Let Me Love You</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">03:09</span>
+              <i id="7" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">Let Me Love You</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">03:55</span>
+              <i id="8" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+
+          <div class="song-item">
+            <img class="cover-image" />
+            <span class="songName">Let Me Love You</span>
+            <span class="song-play">
+              <img src="playing.gif" class="gif2" />
+              <span class="song-time">03:29</span>
+              <i id="9" class="fas fa-play-circle songItemPlay"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        value="0"
+        min="0"
+        max="100"
+        step="0.1"
+      />
+      <div class="time">
+        <p id="currentTime">00:00</p>
+        <p id="duration">00:00</p>
+      </div>
+      <div class="icons">
+        <i class="fas fa-2x fa-backward" id="previous-btn"></i>
+        <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-2x fa-forward" id="next-btn"></i>
+      </div>
+
+      <div class="song-info">
+        <img src="playing.gif" class="gif" />
+        <span id="masterSongName">Let Me Love You - Justin Bieber</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
